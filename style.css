@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*Fuente de Google Fonts
@@ -28,14 +30,25 @@ body{
 }  
 
 .portada{
-    width: auto;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Imagenes/IMG_1970.jpg);
     background-color: gray;
-    color: white
+    color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
 }
 
-.portada img{
-    width: 100%;
-    object-fit: cover; /*Para que la imagen abarque todo el espacio del apartado de la portada*/
+
+.portada h1{
+    box-sizing: border-box;
+    color: white;
+    padding: 20px;
+    font-size: 100px;
 }
 
 h2{
@@ -47,6 +60,7 @@ h2{
 
 .apartado{
     width: auto;
+    background-color: grey;
     margin: 10px;/*Para el espacio fuera del apartado*/
     display: flex;
     align-items: center;
@@ -67,10 +81,16 @@ h2{
 .apartado #boton-apartado{
     font-size: 25px;
     border: 2px solid none; 
-    border-radius: 25px;
-    padding: 10px;
-    background-color: green;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: rgb(12, 134, 12);
     margin: 25px;
+    text-decoration: none; /* Quita el subrayado */
+    color: white;
+}
+
+#boton-apartado:hover{
+    background-color: rgb(34, 98, 68);
 }
 
 .apartado .seccion{
@@ -85,3 +105,6 @@ h2{
     object-fit: cover;
 }
 
+#irlanda-general{
+
+}
