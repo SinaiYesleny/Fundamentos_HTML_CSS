@@ -102,7 +102,7 @@ h2{
 }
 
 .apartado p{
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
 }
 
@@ -133,7 +133,7 @@ h2{
 
 }
 
-.seccion{
+.secciones .seccion{
     width: 300px;
     margin: 10px;
     background-color: rgba(109, 176, 9, 0.53);
