@@ -33,6 +33,11 @@
     margin-left: 20px;
 }
 
+.secciones-navbar a{
+    text-decoration: none;
+    color: white;
+}
+
 body{
     background-color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
@@ -43,12 +48,11 @@ body{
 
 .portada{
     width: 100vw; /*Esto hace que la portada ocupe el 100% de la pantalla*/
-    height: 95vh; /*Esto hace que la portada ocupe el 95% de la altura de la pantalla*/
+    height: 80vh; /*Esto hace que la portada ocupe el 95% de la altura de la pantalla*/
     background-image: url(Imagenes/IMG_1970.jpg); /*Aquí estoy jalando la imagen que quiero como portada*/
-    color: white; /*Esto me hace el texto de color blanco*/
-    background-repeat: no-repeat; /*Hace que la imagen no se repita como mosaico*/
     background-size: cover; /*Hace que la imagen cubra todo el div*/
-    background-position: center; /*Esto hace que la imagen se centre*/
+    background-position: center; /*Esto hace que la imagen se centre*/color: white; /*Esto me hace el texto de color blanco*/
+    background-repeat: no-repeat; /*Hace que la imagen no se repita como mosaico*/
 }
 
 
@@ -77,7 +81,7 @@ h2{
 }
 
 .apartado img{
-    width: 90vh;
+    width: 70vh;
     border-radius: 60px;
     padding: 20px;
 }
