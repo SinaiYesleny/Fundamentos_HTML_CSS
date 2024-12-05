@@ -1,9 +1,7 @@
+/*Aquí le quito el padding y el margin generalizado*/
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /*Fuente de Google Fonts
@@ -15,14 +13,28 @@
 }
 */
 
-nav{
+.navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     background-color: rgb(28, 71, 52);
+    color: white;
+}
+
+.secciones-navbar{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.secciones-navbar li{
+    margin-left: 20px;
 }
 
 body{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -30,25 +42,21 @@ body{
 }  
 
 .portada{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(Imagenes/IMG_1970.jpg);
-    background-color: gray;
-    color: white;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    
+    width: 100vw; /*Esto hace que la portada ocupe el 100% de la pantalla*/
+    height: 95vh; /*Esto hace que la portada ocupe el 95% de la altura de la pantalla*/
+    background-image: url(Imagenes/IMG_1970.jpg); /*Aquí estoy jalando la imagen que quiero como portada*/
+    color: white; /*Esto me hace el texto de color blanco*/
+    background-repeat: no-repeat; /*Hace que la imagen no se repita como mosaico*/
+    background-size: cover; /*Hace que la imagen cubra todo el div*/
+    background-position: center; /*Esto hace que la imagen se centre*/
 }
 
 
 .portada h1{
     box-sizing: border-box;
-    color: white;
     padding: 20px;
     font-size: 100px;
+    display: flex;
 }
 
 h2{
@@ -59,30 +67,46 @@ h2{
 }
 
 .apartado{
-    width: auto;
-    background-color: grey;
-    margin: 10px;/*Para el espacio fuera del apartado*/
+    width: 100vw;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .apartado img{
-    width: 600px;
-    padding: 20px;
+    width: 90vh;
     border-radius: 60px;
+    padding: 20px;
 }
 
 .apartado #texto-apartado{
-    width: 100%;
-    font-size: 25px;
-    padding: 20px;
+    width: 800px;
+    height: 500px;
+    background-color: rgba(109, 176, 9, 0.53);
+    box-sizing: border-box;
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+
 }
 
-.apartado #boton-apartado{
-    font-size: 25px;
+.apartado p{
+    font-weight: 600;
+    font-style: italic;
+}
+
+.apartado a{
+    font-size: 15px;
     border: 2px solid none; 
     border-radius: 50px;
-    padding: 20px;
+    padding: 15px;
     background-color: rgb(12, 134, 12);
     margin: 25px;
     text-decoration: none; /* Quita el subrayado */
