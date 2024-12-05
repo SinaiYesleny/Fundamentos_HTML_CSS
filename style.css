@@ -117,22 +117,37 @@ h2{
     color: white;
 }
 
-#boton-apartado:hover{
+.boton:hover{
     background-color: rgb(34, 98, 68);
 }
 
-.apartado .seccion{
-    align-items: center;
-    justify-content: center;
-    background-color: gray;
-    width: auto;
+.irlanda-general{
+    padding: 50px;
+    text-align: center;
+}
+
+.irlanda-general .secciones{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.seccion{
+    width: 300px;
     margin: 10px;
+    background-color: rgba(109, 176, 9, 0.53);
+    border-radius: 25px;
 }
 
-.apartado .seccion img{
+.seccion img{
+    width: 100%;
     object-fit: cover;
-}
 
+}
+   /* align-items: center;
+    justify-content: center;
+    background-color: gray;*/
 
 footer{
     background-color: rgb(28, 71, 52);
