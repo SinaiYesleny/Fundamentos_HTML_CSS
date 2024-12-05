@@ -71,19 +71,19 @@ h2{
 }
 
 .apartado{
+    padding: 30px;
     width: 100vw;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
     justify-content: space-around;
     align-items: center;
 }
 
 .apartado img{
+    padding: 30px;
     width: 70vh;
     border-radius: 60px;
-    padding: 20px;
+    object-fit: c;
 }
 
 .apartado #texto-apartado{
@@ -133,6 +133,10 @@ h2{
     object-fit: cover;
 }
 
-#irlanda-general{
 
+footer{
+    background-color: rgb(28, 71, 52);
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
