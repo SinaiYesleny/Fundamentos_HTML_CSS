@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /*Fuente de Google Fonts
@@ -14,10 +15,12 @@
 */
 
 .navbar{
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 30px;
     background-color: rgb(28, 71, 52);
     color: white;
 }
@@ -27,6 +30,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: "Montserrat";
 }
 
 .secciones-navbar li{
@@ -48,30 +52,33 @@ body{
 
 .portada{
     width: 100vw; /*Esto hace que la portada ocupe el 100% de la pantalla*/
-    height: 80vh; /*Esto hace que la portada ocupe el 95% de la altura de la pantalla*/
+    height: 95vh; /*Esto hace que la portada ocupe el 95% de la altura de la pantalla*/
     background-image: url(Imagenes/IMG_1970.jpg); /*Aquí estoy jalando la imagen que quiero como portada*/
     background-size: cover; /*Hace que la imagen cubra todo el div*/
-    background-position: center; /*Esto hace que la imagen se centre*/color: white; /*Esto me hace el texto de color blanco*/
+    background-position: center; /*Esto hace que la imagen se centre*/
     background-repeat: no-repeat; /*Hace que la imagen no se repita como mosaico*/
 }
 
 
-.portada h1{
-    box-sizing: border-box;
-    padding: 20px;
-    font-size: 100px;
+.portada .texto-portada{
     display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    height: 100%;
+    font-size: 3rem;
+    color: white; /*Esto me hace el texto de color blanco*/
+    margin-right: 20px;
 }
 
 h2{
     box-sizing: border-box;
     color: rgb(28, 71, 52);
     padding: 20px;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .apartado{
-    padding: 30px;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -81,15 +88,13 @@ h2{
 
 .apartado img{
     padding: 30px;
-    width: 70vh;
+    width: 50vw;
     border-radius: 60px;
     object-fit: c;
 }
 
 .apartado #texto-apartado{
-    width: 800px;
-    height: 500px;
-    background-color: rgba(109, 176, 9, 0.53);
+    width: 40vw;
     box-sizing: border-box;
     margin: 50px;
     padding: 50px;
@@ -98,7 +103,6 @@ h2{
     align-items: center;
     justify-content: center;
     border-radius: 60px;
-
 }
 
 .apartado p{
@@ -111,7 +115,7 @@ h2{
     border: 2px solid none; 
     border-radius: 50px;
     padding: 15px;
-    background-color: rgb(12, 134, 12);
+    background-color:rgb(28, 71, 52);
     margin: 25px;
     text-decoration: none; /* Quita el subrayado */
     color: white;
@@ -121,33 +125,85 @@ h2{
     background-color: rgb(34, 98, 68);
 }
 
-.irlanda-general{
-    padding: 50px;
-    text-align: center;
+.info-irlanda{
+    width: 100vw;
+    background-color: rgb(224, 238, 204);
 }
 
-.irlanda-general .secciones{
+.info-irlanda .secciones{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
-}
-
-.seccion{
-    width: 300px;
+    text-align: center;
+    width: 100vw;
+    height: auto;
     margin: 10px;
-    background-color: rgba(109, 176, 9, 0.53);
     border-radius: 25px;
 }
 
-.seccion img{
-    width: 100%;
-    object-fit: cover;
+.secciones{
+    margin: 10px;
+    border-radius: 25px;
+    background-size: cover;  color: white;
+    font-weight: 300;
+}
+
+.secciones .seccion-his
+{
+    width: 45vw;
+    height: 50vh;
+    margin: 10px;
+    border-radius: 25px;
+    background-image: url(Imagenes/IMG_20220803_093225607.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 8s ease;
+}
+
+.secciones .seccion-his:hover{
+    background-image: url(Imagenes/IMG_20220803_093225607.jpg);
+    background-size: 130%;
+    background-position: center;
 
 }
-   /* align-items: center;
-    justify-content: center;
-    background-color: gray;*/
+
+.secciones .seccion-geo{
+    width: 45vw;
+    height: 50vh;
+    margin: 10px;
+    border-radius: 25px;
+    background-image: url(Imagenes/IMG_4406.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 8s ease-in-out;
+}     
+
+.secciones .seccion-geo:hover{
+    background-size: 130%;
+    background-position: center;
+}
+
+.secciones .seccion-gob{
+    width: 45vw;
+    height: 50vh;
+    margin: 10px;
+    border-radius: 25px;
+    background-image: url("https://thumbs.dreamstime.com/b/custom-house-dublin-20085479.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+.secciones .seccion-cul{
+    width: 45vw;
+    height: 50vh;
+    margin: 10px;
+    border-radius: 25px;
+    background-image: url(Imagenes/fox.jpg);
+    background-size: cover; 
+    background-position: center;
+}
 
 footer{
     background-color: rgb(28, 71, 52);
