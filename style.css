@@ -16,13 +16,13 @@
 
 .navbar{
     position: fixed;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
     background-color: rgb(28, 71, 52);
     color: white;
+    padding: 10px;
 }
 
 .secciones-navbar{
@@ -51,7 +51,7 @@ body{
 }  
 
 .portada{
-    width: 100vw; /*Esto hace que la portada ocupe el 100% de la pantalla*/
+    width: 100%; /*Esto hace que la portada ocupe el 100% de la pantalla*/
     height: 95vh; /*Esto hace que la portada ocupe el 95% de la altura de la pantalla*/
     background-image: url(Imagenes/IMG_1970.jpg); /*Aquí estoy jalando la imagen que quiero como portada*/
     background-size: cover; /*Hace que la imagen cubra todo el div*/
@@ -79,7 +79,7 @@ h2{
 }
 
 .apartado{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -126,7 +126,7 @@ h2{
 }
 
 .info-irlanda{
-    width: 100vw;
+    width: 100%;
     background-color: rgb(224, 238, 204);
 }
 
@@ -150,11 +150,11 @@ h2{
 
 .secciones .seccion-his
 {
-    width: 45vw;
+    width: 40vw;
     height: 50vh;
     margin: 10px;
     border-radius: 25px;
-    background-image: url(Imagenes/IMG_20220803_093225607.jpg);
+    background-image: url(Imagenes/IMG_1878.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,14 +162,13 @@ h2{
 }
 
 .secciones .seccion-his:hover{
-    background-image: url(Imagenes/IMG_20220803_093225607.jpg);
     background-size: 130%;
     background-position: center;
 
 }
 
 .secciones .seccion-geo{
-    width: 45vw;
+    width: 40vw;
     height: 50vh;
     margin: 10px;
     border-radius: 25px;
@@ -186,26 +185,129 @@ h2{
 }
 
 .secciones .seccion-gob{
-    width: 45vw;
+    width: 40vw;
     height: 50vh;
     margin: 10px;
     border-radius: 25px;
     background-image: url("https://thumbs.dreamstime.com/b/custom-house-dublin-20085479.jpg");
     background-size: cover; 
     background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 8s ease-in-out;
 }
 
-.secciones .seccion-cul{
-    width: 45vw;
-    height: 50vh;
-    margin: 10px;
-    border-radius: 25px;
-    background-image: url(Imagenes/fox.jpg);
-    background-size: cover; 
+.secciones .seccion-gob:hover{
+    background-size: 130%;
     background-position: center;
 }
 
+.secciones .seccion-cul{
+    width: 40vw;
+    height: 50vh;
+    margin: 10px;
+    border-radius: 25px;
+    background-image: url(Imagenes/IMG_3725.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 8s ease-in-out;
+}
+
+.secciones .seccion-cul:hover{
+    background-size: 130%;
+    background-position: center;
+}
+
+.dublin {
+    width: 100%;
+}
+
+.dublin h2{
+    text-align: center;
+}
+
+.dublin .horario{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.horario p{
+    width: 30vw;
+    background-color:rgb(224, 238, 204);
+    text-align: center;
+    border-radius: 25px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.act img{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.act video{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.rincones{
+    width: 100%;
+}
+
+.rincones .lugares{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lugares .lugar{
+    width: 400px;
+    height: 600px;
+    background-color: rgb(224, 238, 204);
+    border-radius: 25px;
+    margin: 15px;
+    padding: 50px;
+    text-align: center;
+}
+
+.lugar img{
+    width: 100%;
+}
+
+.apartado-final{
+    width: 100vw;
+}
+
+#reflexion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+#reflexion p{
+    width: 40vw;
+    height: 500px;
+    background-color: rgb(224, 238, 204);
+    
+}
+
+#reflexion img{
+    width: 40vw;
+    height: 500px;
+    object-fit: cover;
+}
+
 footer{
+    width: 100%;
     background-color: rgb(28, 71, 52);
     color: white;
     padding: 10px;
