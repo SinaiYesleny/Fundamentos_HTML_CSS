@@ -327,6 +327,14 @@ h2{
 #reflexion p{
     width: 40%;
     background-color: rgb(224, 238, 204);
+    text-align: justify;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+#reflexion i{
+    
 }
 
 #reflexion img{
@@ -394,3 +402,46 @@ footer {
     font-size: 0.9rem;
     color: #bbb;
 }
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.apartado-historia {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.apartado-historia img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.apartado-historia p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.formulario-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 238, 204);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    color: rgb(28, 71, 52);
+}
+
+.formulario-contacto label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
