@@ -1,5 +1,5 @@
 # Fundamentos del Desarrollo Web
-Proyecto final
+Proyecto final del Módulo 2.
 
 ## Descripción
 Este proyecto es mi primera página web creada desde cero.
@@ -15,7 +15,7 @@ El tema de la página es un blog de viaje.
 - GitHub
 
 ## Instrucciones para ejecutar
-- Abrir el archivo index.htmL
+- Abrir el archivo index.html
 - Puedes visitar mi página en el siguiente enlace: [Mi aventura irlandesa](https://sinaiyesleny.github.io/Fundamentos_HTML_CSS/) 
 
 ## Información del autor
