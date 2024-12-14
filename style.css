@@ -132,6 +132,11 @@ h2{
     background-color: rgb(224, 238, 204);
 }
 
+
+.info-irlanda h2{
+    text-align: center;
+}
+
 .info-irlanda .secciones{
     display: flex;
     justify-content: space-around;
@@ -188,11 +193,31 @@ h2{
     justify-content: space-around;
 }
 
-.secciones h2, .secciones p{
+.secciones h2{
+    color: white;
+    background-color: rgb(11, 47, 0);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.secciones p{
     background-color: rgba(11, 47, 0, 0.666); /* Fondo negro con 60% de opacidad */
     font-weight: 500;
-    border-radius: 25px;
     color: white;
+}
+
+.secciones a{
+    font-size: 15px;
+    border: 2px solid none; 
+    border-radius: 25px;
+    padding: 5px;
+    background-color:rgb(28, 71, 52);
+    margin: 25px;
+    text-decoration: none; /* Quita el subrayado */
+    color: white;
+    align-self: flex-end;
+    font-weight: 500;
 }
 
 .dublin {
@@ -201,40 +226,42 @@ h2{
 
 .dublin h2{
     text-align: center;
+    background-color: rgb(28, 71, 52);
+    color: white;
 }
 
-.dublin .horario{
+.dublin .actividades{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
-
+    flex-wrap: wrap;
 }
 
-.horario p{
-    width: 30vw;
+.actividades .act{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.actividades p{
     background-color:rgb(224, 238, 204);
     text-align: center;
     border-radius: 25px;
     font-size: 15px;
-
-}
-
-.act{
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+    width: 35%;
+    padding: 10px;
+    margin: 10px;
 }
 
 .act img{
     width: 50%;
-    height: 80%;
+    height: 70%;
     max-height: 30vh;
     max-width: 30vw;
     object-fit: cover;
-
+    border-radius: 25px;
 }
 
 .act video{
@@ -243,31 +270,44 @@ h2{
     max-height: 30vh;
     max-width: 30vw;
     object-fit: cover;
-
+    border-radius: 25px;
 }
 
 .rincones{
     width: 100%;
 }
 
+.rincones h2{
+    text-align: center;
+    background-color: rgb(28, 71, 52);
+    color: white;
+}
+
 .rincones .lugares{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgb(224, 238, 204);
 }
 
 .lugares .lugar{
     width: 400px;
-    height: 600px;
-    background-color: rgb(224, 238, 204);
+    height: 500px;
+    background-color: white;
     border-radius: 25px;
-    margin: 15px;
-    padding: 50px;
+    margin: 10px 5px 10px 5px;
+    padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .lugar img{
     width: 100%;
+    height: 70%;
+    object-fit: cover;
 }
 
 .apartado-final{
@@ -277,26 +317,80 @@ h2{
 #reflexion{
     width: 100%;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding:10px;
 }
+
 #reflexion p{
-    width: 40vw;
-    height: 500px;
+    width: 40%;
     background-color: rgb(224, 238, 204);
-    
 }
 
 #reflexion img{
-    width: 40vw;
-    height: 500px;
+    width: 40%;
     object-fit: cover;
 }
 
-footer{
-    width: 100vw;
+footer {
     background-color: rgb(28, 71, 52);
     color: white;
-    padding: 10px;
+    padding: 40px 20px;
     text-align: center;
+}
+
+.footer-contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-info h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.footer-links, .footer-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4, .footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-social li {
+    padding-bottom: 10px;
+}
+
+.footer-links a, .footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del pie de página */
+.footer-cierre p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #bbb;
 }
