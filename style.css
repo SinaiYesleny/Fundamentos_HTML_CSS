@@ -135,6 +135,8 @@ h2{
 
 .info-irlanda h2{
     text-align: center;
+    background-color: rgb(28, 71, 52);
+    color: white;
 }
 
 .info-irlanda .secciones{
@@ -467,6 +469,10 @@ main {
         text-align: center;
     }
 
+    .apartado img{
+        width: 100%;
+    }
+
     .dublin .actividades{
         width: 100%;
         display: flex;
@@ -501,6 +507,52 @@ main {
 
     .formulario-contacto{
         flex-direction: column;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .apartado img{
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1024px) {
+header{
+    font-size: 25px;
+}
+
+    body h2, body p{
+        font-size: 25px;
+    }
+
+    main .apartado-historia h2{
+        font-size: 30px;
+    }
+    
+    main .apartado-historia p{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+
+    .info-irlanda h2, .info-irlanda a{
+        font-size: 25px;
+    }
+    
+    .dublin p{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .rincones p{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    footer {
+        font-size: 20px;
     }
 
 }
